@@ -1,0 +1,84 @@
+{
+    "planets": [
+        {
+            "type": "Barren",
+            "resources": [
+                "Aqueous Liquids",
+                "Base Metals",
+                "Carbon Compounds",
+                "Micro Organisms",
+                "Noble Metals"
+            ]
+        },
+        {
+            "type": "Gas",
+            "resources": [
+                "Aqueous Liquids",
+                "Base Metals",
+                "Ionic Solutions",
+                "Noble Gas",
+                "Reactive Gas"
+            ]
+        },
+        {
+            "type": "Ice",
+            "resources": [
+                "Aqueous Liquids",
+                "Heavy Metals",
+                "Micro Organisms",
+                "Noble Gas",
+                "Planktic Colonies"
+            ]
+        },
+        {
+            "type": "Lava",
+            "resources": [
+                "Base Metals",
+                "Felsic Magma",
+                "Heavy Metals",
+                "Non-CS Crystals",
+                "Suspended Plasma"
+            ]
+        },
+        {
+            "type": "Oceanic",
+            "resources": [
+                "Aqueous Liquids",
+                "Carbon Compounds",
+                "Complex Organisms",
+                "Micro Organisms",
+                "Planktic Colonies"
+            ]
+        },
+        {
+            "type": "Plasma",
+            "resources": [
+                "Base Metals",
+                "Heavy Metals",
+                "Noble Metals",
+                "Non-CS Crystals",
+                "Suspended Plasma"
+            ]
+        },
+        {
+            "type": "Storm",
+            "resources": [
+                "Aqueous Liquids",
+                "Base Metals",
+                "Ionic Solutions",
+                "Noble Gas",
+                "Suspended Plasma"
+            ]
+        },
+        {
+            "type": "Temperate",
+            "resources": [
+                "Aqueous Liquids",
+                "Autotrophs",
+                "Carbon Compounds",
+                "Complex Organisms",
+                "Micro Organisms"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "resources": [
+        {
+            "resource": "Aqueous Liquids",
+            "p1": "Water"
+        },
+        {
+            "resource": "Autotrophs",
+            "p1": "Industrial Fibers"
+        },
+        {
+            "resource": "Base Metals",
+            "p1": "Reactive Metals"
+        },
+        {
+            "resource": "Carbon Compounds",
+            "p1": "Biofuels"
+        },
+        {
+            "resource": "Complex Organisms",
+            "p1": "Proteins"
+        },
+        {
+            "resource": "Felsic Magma",
+            "p1": "Silicon"
+        },
+        {
+            "resource": "Heavy Metals",
+            "p1": "Toxic Metals"
+        },
+        {
+            "resource": "Ionic Solutions",
+            "p1": "Electrolytes"
+        },
+        {
+            "resource": "Micro Organisms",
+            "p1": "Bacteria"
+        },
+        {
+            "resource": "Noble Gas",
+            "p1": "Oxygen"
+        },
+        {
+            "resource": "Noble Metals",
+            "p1": "Precious Metals"
+        },
+        {
+            "resource": "Non-CS Crystals",
+            "p1": "Chiral Structures"
+        },
+        {
+            "resource": "Planktic Colonies",
+            "p1": "Biomass"
+        },
+        {
+            "resource": "Reactive Gas",
+            "p1": "Oxidizing Compound"
+        },
+        {
+            "resource": "Suspended Plasma",
+            "p1": "Plasmoids"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "output": "Biocells",
+        "inputs": ["Biofuels", "Precious Metals"]
+    },
+    {
+        "output": "Construction Blocks",
+        "inputs": ["Toxic Metals", "Reactive Metals"]
+    },
+    {
+        "output": "Consumer Electronics",
+        "inputs": ["Chiral Structures", "Toxic Metals"]
+    },
+    {
+        "output": "Coolant",
+        "inputs": ["Water", "Electrolytes"]
+    },
+    {
+        "output": "Enriched Uranium",
+        "inputs": ["Toxic Metals", "Precious Metals"]
+    },
+    {
+        "output": "Fertilizer",
+        "inputs": ["Proteins", "Bacteria"]
+    },
+    {
+        "output": "Genetically Enhanced Livestock",
+        "inputs": ["Biomass", "Proteins"]
+    },
+    {
+        "output": "Livestock",
+        "inputs": ["Biofuels", "Proteins"]
+    },
+    {
+        "output": "Mechanical Parts",
+        "inputs": ["Precious Metals", "Reactive Metals"]
+    },
+    {
+        "output": "Microfiber Shielding",
+        "inputs": ["Silicon", "Industrial Fibers"]
+    },
+    {
+        "output": "Miniature Electronics",
+        "inputs": ["Silicon", "Chiral Structures"]
+    },
+    {
+        "output": "Nanites",
+        "inputs": ["Reactive Metals", "Bacteria"]
+    },
+    {
+        "output": "Oxides",
+        "inputs": ["Oxygen", "Oxidizing Compound"]
+    },
+    {
+        "output": "Polyaramids",
+        "inputs": ["Industrial Fibers", "Oxidizing Compound"]
+    },
+    {
+        "output": "Polytextiles",
+        "inputs": ["Industrial Fibers", "Biofuels"]
+    },
+    {
+        "output": "Rocket Fuel",
+        "inputs": ["Electrolytes", "Plasmoids"]
+    },
+    {
+        "output": "Silicate Glass",
+        "inputs": ["Silicon", "Oxidizing Compound"]
+    },
+    {
+        "output": "Superconductors",
+        "inputs": ["Water", "Plasmoids"]
+    },
+    {
+        "output": "Supertensile Plastics",
+        "inputs": ["Oxygen", "Biomass"]
+    },
+    {
+        "output": "Synthetic Oil",
+        "inputs": ["Oxygen", "Electrolytes"]
+    },
+    {
+        "output": "Test Cultures",
+        "inputs": ["Water", "Bacteria"]
+    },
+    {
+        "output": "Transmitter",
+        "inputs": ["Plasmoids", "Chiral Structures"]
+    },
+    {
+        "output": "Viral Agent",
+        "inputs": ["Biomass", "Bacteria"]
+    },
+    {
+        "output": "Water-Cooled CPU",
+        "inputs": ["Water", "Reactive Metals"]
+    }
+]
