@@ -1,5 +1,8 @@
 var planetData = [];
 var resourceData = [];
+var p2Data = [];
+var selectedP1 = [];
+
 
 $.getJSON("data/planets.json", function (data) {
     $.each(data.planets, function (index, item) {
@@ -55,6 +58,7 @@ $.getJSON("data/p2_refined.json", function (data) {
                     console.log("P2 Refined Clicked: " + this.innerHTML);
                 })
         );
+        p2Data.push(item)
     })
 });
 
@@ -95,8 +99,8 @@ function processResources(resources) {
     });
 
     var resourcesToProcess = [];
-    $.each(resourceData, function(index, resource) {
-        $.each(resources, function(i2, calledResource) {
+    $.each(resourceData, function (index, resource) {
+        $.each(resources, function (i2, calledResource) {
             if (calledResource == resource.resource) {
                 resourcesToProcess.push(resource);
             }
@@ -113,15 +117,49 @@ function processP1(resources) {
     });
 
     // Update p1 background for matching resource p1 values
+    selectedP1 = [];
     $.each(resources, function (index, resource) {
         $("#p1-list").find("> div").each(function (index, p1Element) {
             if (p1Element.innerHTML == resource.p1) {
                 p1Element.style.backgroundColor = 'blue';
+                selectedP1.push(resource.p1)
             }
         });
     });
 
     // Define p2 to be updated
-
+    processP2(selectedP1);
     // Process P2
+}
+
+function processP2(selectedP1s) {
+    // Reset P2
+    $("#p2-list").find("> div").each(function (index, element) {
+        element.style.backgroundColor = 'white';
+    });
+
+    var p2ToHighlight = [];
+    var firstP1 = false;
+    $.each(p2Data, function (i2, p2) {
+        firstP1 = false;
+        $.each(p2.inputs, function (i3, p2Input) {
+            $.each(selectedP1s, function (i1, p1) {
+                if (p2Input == p1) {
+                    if (firstP1) {
+                        p2ToHighlight.push(p2.output)
+                    } else {
+                        firstP1 = true;
+                    }
+                }
+            })
+        })
+    });
+
+    $.each(p2ToHighlight, function (index, p2) {
+        $("#p2-list").find("> div").each(function (index, p2Element) {
+            if (p2Element.innerHTML == p2) {
+                p2Element.style.backgroundColor = 'blue';
+            }
+        });
+    });
 }
