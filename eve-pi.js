@@ -76,13 +76,12 @@ function processPlanet(clicked) {
 
 function processResources(resources) {
     // Reset resources
-    $("#resource-list").find("> div").each(function (index, element) {
+    $("#resource-list").children("div").each(function (index, element) {
         element.setAttribute('class', 'resource_off');
     });
 
     $.each(resources, function (index, resource) {
-        $("#resource-list").find("> div").each(function (index, resourceElement) {
-            console.log("Updating Resource " + resource.innerHTML + " for pResource: " + resource);
+        $("#resource-list").children("div").each(function (index, resourceElement) {
             if (resourceElement.innerHTML == resource) {
                 resourceElement.setAttribute('class', 'resource_on');
             }
@@ -103,14 +102,14 @@ function processResources(resources) {
 
 function processP1(resources) {
     // Reset p1
-    $("#p1-list").find("> div").each(function (index, element) {
+    $("#p1-list").children("div").each(function (index, element) {
         element.setAttribute('class', 'p1_off');
     });
 
     // Update p1 background for matching resource p1 values
     selectedP1 = [];
     $.each(resources, function (index, resource) {
-        $("#p1-list").find("> div").each(function (index, p1Element) {
+        $("#p1-list").children("div").each(function (index, p1Element) {
             if (p1Element.innerHTML == resource.p1) {
                 p1Element.setAttribute('class', 'p1_on');
                 selectedP1.push(resource.p1)
@@ -125,7 +124,7 @@ function processP1(resources) {
 
 function processP2(selectedP1s) {
     // Reset P2
-    $("#p2-list").find("> div").each(function (index, element) {
+    $("#p2-list").children("div").each(function (index, element) {
         element.setAttribute('class', 'p2_off');
     });
 
@@ -137,7 +136,7 @@ function processP2(selectedP1s) {
             $.each(selectedP1s, function (i1, p1) {
                 if (p2Input == p1) {
                     if (firstP1) {
-                        p2ToHighlight.push(p2.output)
+                        p2ToHighlight.push(p2)
                     } else {
                         firstP1 = true;
                     }
@@ -147,8 +146,8 @@ function processP2(selectedP1s) {
     });
 
     $.each(p2ToHighlight, function (index, p2) {
-        $("#p2-list").find("> div").each(function (index, p2Element) {
-            if (p2Element.innerHTML == p2) {
+        $("#p2-list").children("div").each(function (index, p2Element) {
+            if (p2Element.innerHTML == p2.output) {
                 p2Element.setAttribute('class', 'p1_on');
             }
         });
