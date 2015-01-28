@@ -1,0 +1,13 @@
+.planet_off, .resource_off, .p1_off, .p2_off  {
+    background: #888888;
+    color: #FFFFFF;
+}
+
+.planet_on, .resource_on, .p1_on, .p2_on {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+body {
+    background: #6f1924;
+}

@@ -9,7 +9,7 @@ $.getJSON("data/planets.json", function (data) {
         $("#planet-list").append(
             $('<div></div>')
                 .text(item.type)
-                .attr("class", "planet")
+                .attr("class", "planet_off")
                 .click(function () {
                     processPlanet(this)
                 })
@@ -24,10 +24,7 @@ $.getJSON("data/resources.json", function (data) {
         $("#resource-list").append(
             $('<div></div>')
                 .text(item.resource)
-                .attr("class", "resource")
-                .click(function () {
-                    console.log("Resource Clicked: " + this.innerHTML);
-                })
+                .attr("class", "resource_off")
         );
         resourceData.push(item)
     })
@@ -39,10 +36,7 @@ $.getJSON("data/p1_basic.json", function (data) {
         $("#p1-list").append(
             $('<div></div>')
                 .text(item)
-                .attr("class", "p1")
-                .click(function () {
-                    console.log("P1 Basic Clicked: " + this.innerHTML);
-                })
+                .attr("class", "p1_off")
         );
     })
 });
@@ -53,10 +47,7 @@ $.getJSON("data/p2_refined.json", function (data) {
         $("#p2-list").append(
             $('<div></div>')
                 .text(item.output)
-                .attr("class", "p2")
-                .click(function () {
-                    console.log("P2 Refined Clicked: " + this.innerHTML);
-                })
+                .attr("class", "p2_off")
         );
         p2Data.push(item)
     })
@@ -69,11 +60,11 @@ $(document).ready(function () {
 function processPlanet(clicked) {
     // Reset planets
     $("#planet-list").find("> div").each(function (index, element) {
-        element.style.backgroundColor = 'white';
+        element.setAttribute('class', 'planet_off');
     });
 
     console.log("Called processPlanet: " + clicked.innerHTML);
-    clicked.style.backgroundColor = 'blue';
+    clicked.setAttribute('class', 'planet_on');
     $.each(planetData, function (index, item) {
         if (item.type == clicked.innerHTML) {
             console.log("Planet Type: " + item.type);
@@ -86,14 +77,14 @@ function processPlanet(clicked) {
 function processResources(resources) {
     // Reset resources
     $("#resource-list").find("> div").each(function (index, element) {
-        element.style.backgroundColor = 'white';
+        element.setAttribute('class', 'resource_off');
     });
 
     $.each(resources, function (index, resource) {
         $("#resource-list").find("> div").each(function (index, resourceElement) {
             console.log("Updating Resource " + resource.innerHTML + " for pResource: " + resource);
             if (resourceElement.innerHTML == resource) {
-                resourceElement.style.backgroundColor = 'blue';
+                resourceElement.setAttribute('class', 'resource_on');
             }
         });
     });
@@ -113,7 +104,7 @@ function processResources(resources) {
 function processP1(resources) {
     // Reset p1
     $("#p1-list").find("> div").each(function (index, element) {
-        element.style.backgroundColor = 'white';
+        element.setAttribute('class', 'p1_off');
     });
 
     // Update p1 background for matching resource p1 values
@@ -121,7 +112,7 @@ function processP1(resources) {
     $.each(resources, function (index, resource) {
         $("#p1-list").find("> div").each(function (index, p1Element) {
             if (p1Element.innerHTML == resource.p1) {
-                p1Element.style.backgroundColor = 'blue';
+                p1Element.setAttribute('class', 'p1_on');
                 selectedP1.push(resource.p1)
             }
         });
@@ -135,7 +126,7 @@ function processP1(resources) {
 function processP2(selectedP1s) {
     // Reset P2
     $("#p2-list").find("> div").each(function (index, element) {
-        element.style.backgroundColor = 'white';
+        element.setAttribute('class', 'p2_off');
     });
 
     var p2ToHighlight = [];
@@ -158,7 +149,7 @@ function processP2(selectedP1s) {
     $.each(p2ToHighlight, function (index, p2) {
         $("#p2-list").find("> div").each(function (index, p2Element) {
             if (p2Element.innerHTML == p2) {
-                p2Element.style.backgroundColor = 'blue';
+                p2Element.setAttribute('class', 'p1_on');
             }
         });
     });
