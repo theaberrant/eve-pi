@@ -1,0 +1,343 @@
+
+[
+    {
+        "output": "Broadcast Node",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Neocoms", "Data Chips", "High-Tech Transmitters"]
+    },
+    {
+        "output": "Integrity Response Drones",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Gel-Matrix Biopaste", "Hazmat Detection Systems", "Planetary Vehicles"]
+    },
+    {
+        "output": "Nano-Factory",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Industrial Explosives", "Reactive Metals", "Ukomi Superconductors"]
+    },
+    {
+        "output": "Organic Mortar Applicators",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Condensates", "Bacteria", "Robotics"]
+    },
+    {
+        "output": "Recursive Computing Module",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Synthetic Synapses", "Guidance Systems", "Transcranial Microcontrollers"]
+    },
+    {
+        "output": "Self-Harmonizing Power Core",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Camera Drones", "Nuclear Reactors", "Hermetic Membranes"]
+    },
+    {
+        "output": "Sterile Conduits",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Smartfab Units", "Water", "Vaccines"]
+    },
+    {
+        "output": "Wetware Mainframe",
+        "output_type": "Advanced Planetary Materials",
+        "inputs": ["Supercomputers", "Biotech Research Reports", "Cryoprotectant Solution"]
+    },
+    {
+        "output": "Biotech Research Reports",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Nanites", "Livestock", "Construction Blocks"]
+    },
+    {
+        "output": "Camera Drones",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Silicate Glass", "Rocket Fuel"]
+    },
+    {
+        "output": "Condensates",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Oxides", "Coolant"]
+    },
+    {
+        "output": "Cryoprotectant Solution",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Synthetic Oil", "Fertilizer", "Test Cultures"]
+    },
+    {
+        "output": "Data Chips",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Supertensile Plastics", "Microfiber Shielding"]
+    },
+    {
+        "output": "Gel-Matrix Biopaste",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Oxides", "Biocells", "Superconductors"]
+    },
+    {
+        "output": "Guidance Systems",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Water-Cooled CPU", "Transmitter"]
+    },
+    {
+        "output": "Hazmat Detection Systems",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Polytextiles", "Viral Agent", "Transmitter"]
+    },
+    {
+        "output": "Hermetic Membranes",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Polyaramids", "Genetically Enhanced Livestock"]
+    },
+    {
+        "output": "High-Tech Transmitters",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Polyaramids", "Transmitter"]
+    },
+    {
+        "output": "Industrial Explosives",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Fertilizer", "Polytextiles"]
+    },
+    {
+        "output": "Neocoms",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Biocells", "Silicate Glass"]
+    },
+    {
+        "output": "Nuclear Reactors",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Enriched Uranium", "Microfiber Shielding"]
+    },
+    {
+        "output": "Planetary Vehicles",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Supertensile Plastics", "Mechanical Parts", "Miniature Electronics"]
+    },
+    {
+        "output": "Robotics",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Mechanical Parts", "Consumer Electronics"]
+    },
+    {
+        "output": "Smartfab Units",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Construction Blocks", "Miniature Electronics"]
+    },
+    {
+        "output": "Supercomputers",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Water-Cooled CPU", "Coolant", "Consumer Electronics"]
+    },
+    {
+        "output": "Synthetic Synapses",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Supertensile Plastics", "Test Cultures"]
+    },
+    {
+        "output": "Transcranial Microcontrollers",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Biocells", "Nanites"]
+    },
+    {
+        "output": "Ukomi Superconductors",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Synthetic Oil", "Superconductors"]
+    },
+    {
+        "output": "Vaccines",
+        "output_type": "Specialized Planetary Materials",
+        "inputs": ["Livestock", "Viral Agent"]
+    },
+    {
+        "output": "Biocells",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Biofuels", "Precious Metals"]
+    },
+    {
+        "output": "Construction Blocks",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Reactive Metals", "Toxic Metals"]
+    },
+    {
+        "output": "Consumer Electronics",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Toxic Metals", "Chiral Structures"]
+    },
+    {
+        "output": "Coolant",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Electrolytes", "Water"]
+    },
+    {
+        "output": "Enriched Uranium",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Precious Metals", "Toxic Metals"]
+    },
+    {
+        "output": "Fertilizer",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Bacteria", "Proteins"]
+    },
+    {
+        "output": "Genetically Enhanced Livestock",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Proteins", "Biomass"]
+    },
+    {
+        "output": "Livestock",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Proteins", "Biofuels"]
+    },
+    {
+        "output": "Mechanical Parts",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Reactive Metals", "Precious Metals"]
+    },
+    {
+        "output": "Microfiber Shielding",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Industrial Fibers", "Silicon"]
+    },
+    {
+        "output": "Miniature Electronics",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Chiral Structures", "Silicon"]
+    },
+    {
+        "output": "Nanites",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Bacteria", "Reactive Metals"]
+    },
+    {
+        "output": "Oxides",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Oxidizing Compound", "Oxygen"]
+    },
+    {
+        "output": "Polyaramids",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Oxidizing Compound", "Industrial Fibers"]
+    },
+    {
+        "output": "Polytextiles",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Biofuels", "Industrial Fibers"]
+    },
+    {
+        "output": "Rocket Fuel",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Plasmoids", "Electrolytes"]
+    },
+    {
+        "output": "Silicate Glass",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Oxidizing Compound", "Silicon"]
+    },
+    {
+        "output": "Superconductors",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Plasmoids", "Water"]
+    },
+    {
+        "output": "Supertensile Plastics",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Oxygen", "Biomass"]
+    },
+    {
+        "output": "Synthetic Oil",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Electrolytes", "Oxygen"]
+    },
+    {
+        "output": "Test Cultures",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Bacteria", "Water"]
+    },
+    {
+        "output": "Transmitter",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Plasmoids", "Chiral Structures"]
+    },
+    {
+        "output": "Viral Agent",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Bacteria", "Biomass"]
+    },
+    {
+        "output": "Water-Cooled CPU",
+        "output_type": "Refined Planetary Materials",
+        "inputs": ["Reactive Metals", "Water"]
+    },
+    {
+        "output": "Bacteria",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Microorganisms"]
+    },
+    {
+        "output": "Biofuels",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Carbon Compounds"]
+    },
+    {
+        "output": "Biomass",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Planktic Colonies"]
+    },
+    {
+        "output": "Chiral Structures",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Non-CS Crystals"]
+    },
+    {
+        "output": "Electrolytes",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Ionic Solutions"]
+    },
+    {
+        "output": "Industrial Fibers",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Autotrophs"]
+    },
+    {
+        "output": "Oxidizing Compound",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Reactive Gas"]
+    },
+    {
+        "output": "Oxygen",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Noble Gas"]
+    },
+    {
+        "output": "Plasmoids",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Suspended Plasma"]
+    },
+    {
+        "output": "Precious Metals",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Noble Metals"]
+    },
+    {
+        "output": "Proteins",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Complex Organisms"]
+    },
+    {
+        "output": "Reactive Metals",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Base Metals"]
+    },
+    {
+        "output": "Silicon",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Felsic Magma"]
+    },
+    {
+        "output": "Toxic Metals",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Heavy Metals"]
+    },
+    {
+        "output": "Water",
+        "output_type": "Processed Planetary Materials",
+        "inputs": ["Aqueous Liquids"]
+    }
+]
