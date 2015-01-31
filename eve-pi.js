@@ -1,6 +1,7 @@
 var planetData = [];
 var blueprints = [];
 
+// Planet Data is hardcoded, based on http://wiki.eveuniversity.org/Planet
 $.getJSON("data/planets.json", function (data) {
     $.each(data.planets, function (index, item) {
         $("#planet-list").append(
@@ -15,6 +16,30 @@ $.getJSON("data/planets.json", function (data) {
     })
 });
 
+// Based on database static database query:
+/*
+ SELECT CONCAT('{', GROUP_CONCAT(CONCAT('"', marketGroupName, '":', inputs) SEPARATOR ','), '}') as marketInputs FROM (
+ SELECT
+ marketGroupName, CONCAT('[', GROUP_CONCAT(inputs SEPARATOR ','), ']') as inputs
+ FROM
+ (SELECT
+ mg_output.marketGroupID, mg_output.marketGroupName,
+ CONCAT('{"output":', CONCAT('"', it_output.typeName, '",'), '"output_type":', CONCAT('"', mg_output.marketGroupName, '",'), '"inputs": [', GROUP_CONCAT(CONCAT('"', it_input.typeName, '"')
+ SEPARATOR ','), ']}') inputs
+ FROM
+ planetSchematicsTypeMap ps_input
+ JOIN invTypes it_input ON ps_input.typeID = it_input.typeID
+ JOIN planetSchematicsTypeMap ps_output ON ps_input.schematicID = ps_output.schematicID
+ JOIN invTypes it_output ON ps_output.typeID = it_output.typeID
+ JOIN invMarketGroups mg_output ON it_output.marketGroupID = mg_output.marketGroupID
+ WHERE
+ ps_input.isInput = 1
+ AND ps_output.isInput = 0
+ GROUP BY mg_output.marketGroupId , it_output.typeName
+ ORDER BY mg_output.marketGroupID DESC) AS input
+ GROUP BY marketGroupID) as tbl_input
+ GROUP BY marketGroupName;
+ */
 $.getJSON("data/blueprints.json", function (data) {
     console.log("Loading Planetary blueprints...");
     $.each(data, function (index, item) {

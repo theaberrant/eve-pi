@@ -6,7 +6,7 @@
                 "Aqueous Liquids",
                 "Base Metals",
                 "Carbon Compounds",
-                "Micro Organisms",
+                "Microorganisms",
                 "Noble Metals"
             ]
         },
@@ -25,7 +25,7 @@
             "resources": [
                 "Aqueous Liquids",
                 "Heavy Metals",
-                "Micro Organisms",
+                "Microorganisms",
                 "Noble Gas",
                 "Planktic Colonies"
             ]
@@ -46,7 +46,7 @@
                 "Aqueous Liquids",
                 "Carbon Compounds",
                 "Complex Organisms",
-                "Micro Organisms",
+                "Microorganisms",
                 "Planktic Colonies"
             ]
         },
@@ -77,7 +77,7 @@
                 "Autotrophs",
                 "Carbon Compounds",
                 "Complex Organisms",
-                "Micro Organisms"
+                "Microorganisms"
             ]
         }
     ]
