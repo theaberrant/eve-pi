@@ -7,7 +7,7 @@ $.getJSON("data/planets.json", function (data) {
         $("#planet-list").append(
             $('<div></div>')
                 .text(item.type)
-                .attr("class", "planet_off")
+                .attr("class", "planet_deselected")
                 .click(function () {
                     processPlanet(this)
                 })
@@ -50,11 +50,11 @@ $.getJSON("data/blueprints.json", function (data) {
 function processPlanet(clicked) {
     // Reset planets
     $("#planet-list").find("> div").each(function (index, element) {
-        element.setAttribute('class', 'planet_off');
+        element.setAttribute('class', 'planet_deselected');
     });
 
     console.log("Called processPlanet: " + clicked.innerHTML);
-    clicked.setAttribute('class', 'planet_on');
+    clicked.setAttribute('class', 'planet_selected');
     $.each(planetData, function (index, item) {
         if (item.type == clicked.innerHTML) {
             console.log("Planet Type: " + item.type);
@@ -106,7 +106,7 @@ function findP2FromBlueprints(selectedP1s) {
 function displayBlueprint(blueprint) {
     var blueprintDiv = $('<div></div>')
         .text(blueprint.output)
-        .attr("class", "output_on");
+        .attr("class", "output");
     $.each(blueprint.inputs, function (i1, input) {
         blueprintDiv.append(
             $('<div></div>')

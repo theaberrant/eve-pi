@@ -1,18 +1,47 @@
-.planet_off {
-    background: #888888;
-    color: #FFFFFF;
+/* Planet list - deselected */
+.planet_deselected {
+    background: #646f8d;
+    color: #d0e6ff;
 }
 
-.planet_on, .output_on {
-    background: #000000;
-    color: #FFFFFF;
+/* Planet list - selected */
+.planet_selected {
+    background: #b2cce8;
+    color: #353745;
 }
 
+/* Output to right of planet - group */
+.output {
+    background: #b2cce8;
+    color: #353745;
+}
+
+/* Output Sub-components */
 .blueprint_inputs {
-    background: #888888;
+    background: #90a6c3;
     color: #FFFFFF;
 }
 
+/* Border Definitions - general */
+.planet_selected, .planet_deselected, .output, .blueprint_inputs {
+    border-style: solid;
+    border-color: #4d4f68;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+/* Entire page! */
 body {
-    background: #6f1924;
+    background: #000000;
+}
+
+/* Header thingy */
+.jumbotron {
+    background: #646f8c;
+    color: #d0e6ff;
+}
+
+/* Header text items */
+h1 {
+    color: #bababa;
 }
