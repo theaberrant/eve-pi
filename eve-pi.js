@@ -11,6 +11,10 @@ $.getJSON("data/planets.json", function (data) {
                 processPlanet(this)
             });
 
+        var image = document.createElement('img');
+        image.setAttribute('src', getImageUrl(item.type_id));
+
+        planetDiv.prepend(image);
 
         $("#planet-list").append(planetDiv);
         planetData.push(item)
@@ -57,10 +61,10 @@ function processPlanet(clicked) {
         element.setAttribute('class', 'planet_deselected');
     });
 
-    console.log("Called processPlanet: " + clicked.innerHTML);
+    console.log("Called processPlanet: " + clicked.innerText);
     clicked.setAttribute('class', 'planet_selected');
     $.each(planetData, function (index, item) {
-        if (item.type == clicked.innerHTML) {
+        if (item.type == clicked.innerText) {
             console.log("Planet Type: " + item.type);
             console.log("Planet Resources: " + item.resources);
             findP1FromResources(item.resources);
