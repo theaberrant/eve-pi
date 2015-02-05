@@ -1,3 +1,11 @@
+/* Border Definitions - general */
+.planet_selected, .planet_deselected, .output_wrapper, .input {
+    border-style: solid;
+    border-color: #4d4f68;
+    border-radius: 10px;
+    padding: 6px;
+}
+
 /* Planet list - deselected */
 .planet_deselected {
     background: #646f8d;
@@ -10,24 +18,27 @@
     color: #353745;
 }
 
-/* Output to right of planet - group */
-.output {
-    background: #b2cce8;
-    color: #353745;
-}
-
-/* Output Sub-components */
-.blueprint_inputs {
+/* Output nested in output_1 */
+.output_wrapper {
     background: #90a6c3;
     color: #FFFFFF;
+    clear: both;
 }
 
-/* Border Definitions - general */
-.planet_selected, .planet_deselected, .output, .blueprint_inputs {
-    border-style: solid;
-    border-color: #4d4f68;
-    border-radius: 10px;
-    padding: 6px;
+/* Output to right of planet group */
+.output {
+    display: inline-block;
+}
+
+/* Wrapper for input elements */
+.input_wrapper {
+    background: #7d9ac7;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+/* Individual input elements*/
+.input {
 }
 
 /* Entire page! */
