@@ -150,8 +150,14 @@ function getOutputDiv(blueprint) {
     image.setAttribute('src', getImageUrl(blueprint.output_type_id));
     outputDiv.append(image);
     var textDiv = $('<div></div>')
-        .text(blueprint.output)
-        .attr("class", "output_text");
+        .text( blueprint.output)
+        .attr("class", "output_text")
+    var sellPriceDiv = $('<div></div>')
+    setSellPriceDivText(blueprint.output_type_id, sellPriceDiv)
+    var buyPriceDiv = $('<div></div>')
+    setBuyPriceDivText(blueprint.output_type_id, buyPriceDiv)
+    textDiv.append(sellPriceDiv)
+    textDiv.append(buyPriceDiv)
     outputDiv.append(textDiv);
 
     returnDiv.append(outputDiv);
@@ -170,4 +176,38 @@ function findBlueprintFromOutput(output) {
 
 function getImageUrl(typeID) {
     return "https://image.eveonline.com/Type/" + typeID + "_64.png"
+}
+
+// TODO: Need to add some sort of local caching
+function setSellPriceDivText(typeID, div) {
+    var result = null;
+    var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
+    $.ajax({
+        url: scriptUrl,
+        type: 'get',
+        dataType: 'html',
+        async: true,
+        success: function(data) {
+            var allMarketData = $(data).find("type[id='" + typeID + "'] sell");
+            result = $($(allMarketData).find("min")).text();
+            div.text("Min Sell: " + result + " ISK")
+        }
+    });
+}
+
+// TODO: Need to add some sort of local caching
+function setBuyPriceDivText(typeID, div) {
+    var result = null;
+    var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
+    $.ajax({
+        url: scriptUrl,
+        type: 'get',
+        dataType: 'html',
+        async: true,
+        success: function(data) {
+            var allMarketData = $(data).find("type[id='" + typeID + "'] buy");
+            result = $($(allMarketData).find("max")).text();
+            div.text("Max Buy: " + result + " ISK")
+        }
+    });
 }
