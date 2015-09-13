@@ -1,5 +1,6 @@
 var planetData = [];
 var blueprints = [];
+var priceInfo = {};
 
 // Planet Data is hardcoded, based on http://wiki.eveuniversity.org/Planet
 $.getJSON("data/planets.json", function (data) {
@@ -152,9 +153,9 @@ function getOutputDiv(blueprint) {
     var textDiv = $('<div></div>')
         .text( blueprint.output)
         .attr("class", "output_text")
-    var sellPriceDiv = $('<div></div>')
+    var sellPriceDiv = $('<div></div>').text("LOADING")
     setSellPriceDivText(blueprint.output_type_id, sellPriceDiv)
-    var buyPriceDiv = $('<div></div>')
+    var buyPriceDiv = $('<div></div>').text("LOADING")
     setBuyPriceDivText(blueprint.output_type_id, buyPriceDiv)
     textDiv.append(sellPriceDiv)
     textDiv.append(buyPriceDiv)
@@ -178,36 +179,52 @@ function getImageUrl(typeID) {
     return "https://image.eveonline.com/Type/" + typeID + "_64.png"
 }
 
-// TODO: Need to add some sort of local caching
+// TODO: Really only need to callout to eve-central once per typeID for both sell and buy
 function setSellPriceDivText(typeID, div) {
     var result = null;
-    var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
-    $.ajax({
-        url: scriptUrl,
-        type: 'get',
-        dataType: 'html',
-        async: true,
-        success: function(data) {
-            var allMarketData = $(data).find("type[id='" + typeID + "'] sell");
-            result = $($(allMarketData).find("min")).text();
-            div.text("Min Sell: " + result + " ISK")
-        }
-    });
+
+    if (priceInfo[typeID] == null || priceInfo[typeID]["sellPrice"] == null) {
+        var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
+        $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: true,
+            success: function(data) {
+                console.log("Called out to eve-central to get sell price for typeID: " + typeID)
+                var allMarketData = $(data).find("type[id='" + typeID + "'] sell");
+                result = $($(allMarketData).find("min")).text();
+                priceInfo[typeID] = priceInfo[typeID] ? priceInfo[typeID] : {};
+                priceInfo[typeID]["sellPrice"] = result;
+                div.text("Min Sell: " + result + " ISK")
+            }
+        });
+    } else {
+        console.log("Loaded sell price from cache for typeID: " + typeID)
+        div.text("Min Sell: " + priceInfo[typeID]["sellPrice"] + " ISK")
+    }
 }
 
-// TODO: Need to add some sort of local caching
 function setBuyPriceDivText(typeID, div) {
     var result = null;
-    var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
-    $.ajax({
-        url: scriptUrl,
-        type: 'get',
-        dataType: 'html',
-        async: true,
-        success: function(data) {
-            var allMarketData = $(data).find("type[id='" + typeID + "'] buy");
-            result = $($(allMarketData).find("max")).text();
-            div.text("Max Buy: " + result + " ISK")
-        }
-    });
+
+    if (priceInfo[typeID] == null || priceInfo[typeID]["buyPrice"] == null) {
+        var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
+        $.ajax({
+            url: scriptUrl,
+            type: 'get',
+            dataType: 'html',
+            async: true,
+            success: function(data) {
+                var allMarketData = $(data).find("type[id='" + typeID + "'] buy");
+                result = $($(allMarketData).find("max")).text();
+                priceInfo[typeID] = priceInfo[typeID] ? priceInfo[typeID] : {};
+                priceInfo[typeID]["buyPrice"] = result;
+                div.text("Max Buy: " + result + " ISK")
+            }
+        });
+    } else {
+        console.log("Loaded Buy price from cache for typeID: " + typeID)
+        div.text("Max Buy: " + priceInfo[typeID]["sellPrice"] + " ISK")
+    }
 }
