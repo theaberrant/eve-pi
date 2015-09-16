@@ -154,9 +154,8 @@ function getOutputDiv(blueprint) {
         .text( blueprint.output)
         .attr("class", "output_text")
     var sellPriceDiv = $('<div></div>').text("LOADING")
-    setSellPriceDivText(blueprint.output_type_id, sellPriceDiv)
     var buyPriceDiv = $('<div></div>').text("LOADING")
-    setBuyPriceDivText(blueprint.output_type_id, buyPriceDiv)
+    populateMarketData(blueprint.output_type_id, sellPriceDiv, buyPriceDiv)
     textDiv.append(sellPriceDiv)
     textDiv.append(buyPriceDiv)
     outputDiv.append(textDiv);
@@ -179,11 +178,8 @@ function getImageUrl(typeID) {
     return "https://image.eveonline.com/Type/" + typeID + "_64.png"
 }
 
-// TODO: Really only need to callout to eve-central once per typeID for both sell and buy
-function setSellPriceDivText(typeID, div) {
-    var result = null;
-
-    if (priceInfo[typeID] == null || priceInfo[typeID]["sellPrice"] == null) {
+function populateMarketData(typeID, sellDiv, buyDiv) {
+    if (priceInfo[typeID] == null) {
         var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
         $.ajax({
             url: scriptUrl,
@@ -191,40 +187,18 @@ function setSellPriceDivText(typeID, div) {
             dataType: 'html',
             async: true,
             success: function(data) {
-                console.log("Called out to eve-central to get sell price for typeID: " + typeID)
-                var allMarketData = $(data).find("type[id='" + typeID + "'] sell");
-                result = $($(allMarketData).find("min")).text();
+                var allMarketData = $(data).find("type[id='" + typeID + "']");
+                var maxBuyPrice = $($($(allMarketData).find("buy")).find("max")).text();
+                var minSellPrice = $($($(allMarketData).find("sell")).find("min")).text();
                 priceInfo[typeID] = priceInfo[typeID] ? priceInfo[typeID] : {};
-                priceInfo[typeID]["sellPrice"] = result;
-                div.text("Min Sell: " + result + " ISK")
+                priceInfo[typeID]["buyPrice"] = maxBuyPrice;
+                priceInfo[typeID]["sellPrice"] = minSellPrice;
+                sellDiv.text("Min Sell: " + minSellPrice + " ISK")
+                buyDiv.text("Max Buy: " + maxBuyPrice + " ISK")
             }
         });
     } else {
-        console.log("Loaded sell price from cache for typeID: " + typeID)
-        div.text("Min Sell: " + priceInfo[typeID]["sellPrice"] + " ISK")
-    }
-}
-
-function setBuyPriceDivText(typeID, div) {
-    var result = null;
-
-    if (priceInfo[typeID] == null || priceInfo[typeID]["buyPrice"] == null) {
-        var scriptUrl ="http://api.eve-central.com/api/marketstat?typeid=" + typeID + "&usesystem=30000142"
-        $.ajax({
-            url: scriptUrl,
-            type: 'get',
-            dataType: 'html',
-            async: true,
-            success: function(data) {
-                var allMarketData = $(data).find("type[id='" + typeID + "'] buy");
-                result = $($(allMarketData).find("max")).text();
-                priceInfo[typeID] = priceInfo[typeID] ? priceInfo[typeID] : {};
-                priceInfo[typeID]["buyPrice"] = result;
-                div.text("Max Buy: " + result + " ISK")
-            }
-        });
-    } else {
-        console.log("Loaded Buy price from cache for typeID: " + typeID)
-        div.text("Max Buy: " + priceInfo[typeID]["sellPrice"] + " ISK")
+        sellDiv.text("Min Sell: " + priceInfo[typeID]["sellPrice"] + " ISK")
+        buyDiv.text("Max Buy: " + priceInfo[typeID]["buyPrice"] + " ISK")
     }
 }
