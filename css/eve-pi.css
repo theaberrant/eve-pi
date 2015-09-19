@@ -3,7 +3,8 @@
     border-style: solid;
     border-color: #4d4f68;
     border-radius: 10px;
-    padding: 6px;
+    overflow: auto;
+    padding: 10px
 }
 
 /* Planet list - deselected */
@@ -25,6 +26,18 @@
     clear: both;
 }
 
+/* Output Image */
+.output_wrapper img {
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* Output text */
+.output_text {
+    padding: 10px;
+}
+
 /* Output to right of planet group */
 .output {
     display: inline-block;
@@ -35,6 +48,7 @@
     background: #7d9ac7;
     color: #FFFFFF;
     display: inline-block;
+    float: left;
 }
 
 /* Individual input elements*/
