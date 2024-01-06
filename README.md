@@ -12,6 +12,8 @@ Navigate to index.html.
 
 The only reason you need to use a webserver instead of just loading in a browser is because I load files as json.  This will probably change once I get bored with trying to be fancy...
 
+Or just go to http://theaberrant.github.io/eve-pi/
+
 Helping Out
 -----------
 

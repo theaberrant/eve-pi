@@ -2,6 +2,7 @@
     "planets": [
         {
             "type": "Barren",
+            "type_id": 2016,
             "resources": [
                 "Aqueous Liquids",
                 "Base Metals",
@@ -12,6 +13,7 @@
         },
         {
             "type": "Gas",
+            "type_id": 13,
             "resources": [
                 "Aqueous Liquids",
                 "Base Metals",
@@ -22,6 +24,7 @@
         },
         {
             "type": "Ice",
+            "type_id": 12,
             "resources": [
                 "Aqueous Liquids",
                 "Heavy Metals",
@@ -32,6 +35,7 @@
         },
         {
             "type": "Lava",
+            "type_id": 2015,
             "resources": [
                 "Base Metals",
                 "Felsic Magma",
@@ -42,6 +46,7 @@
         },
         {
             "type": "Oceanic",
+            "type_id": 2014,
             "resources": [
                 "Aqueous Liquids",
                 "Carbon Compounds",
@@ -52,6 +57,7 @@
         },
         {
             "type": "Plasma",
+            "type_id": 2063,
             "resources": [
                 "Base Metals",
                 "Heavy Metals",
@@ -62,6 +68,7 @@
         },
         {
             "type": "Storm",
+            "type_id": 2017,
             "resources": [
                 "Aqueous Liquids",
                 "Base Metals",
@@ -72,6 +79,7 @@
         },
         {
             "type": "Temperate",
+            "type_id": 11,
             "resources": [
                 "Aqueous Liquids",
                 "Autotrophs",

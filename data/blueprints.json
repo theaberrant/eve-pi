@@ -1,343 +1,485 @@
-
 [
     {
         "output": "Broadcast Node",
         "output_type": "Advanced Planetary Materials",
+        "output_type_id": "2867",
         "inputs": ["Neocoms", "Data Chips", "High-Tech Transmitters"]
     },
     {
         "output": "Integrity Response Drones",
         "output_type": "Advanced Planetary Materials",
-        "inputs": ["Gel-Matrix Biopaste", "Hazmat Detection Systems", "Planetary Vehicles"]
+        "output_type_id": "2868",
+        "inputs": ["Hazmat Detection Systems", "Planetary Vehicles", "Gel-Matrix Biopaste"]
     },
     {
         "output": "Nano-Factory",
         "output_type": "Advanced Planetary Materials",
-        "inputs": ["Industrial Explosives", "Reactive Metals", "Ukomi Superconductors"]
+        "output_type_id": "2869",
+        "inputs": ["Ukomi Superconductors", "Industrial Explosives", "Reactive Metals"]
     },
     {
         "output": "Organic Mortar Applicators",
         "output_type": "Advanced Planetary Materials",
+        "output_type_id": "2870",
         "inputs": ["Condensates", "Bacteria", "Robotics"]
     },
     {
         "output": "Recursive Computing Module",
         "output_type": "Advanced Planetary Materials",
-        "inputs": ["Synthetic Synapses", "Guidance Systems", "Transcranial Microcontrollers"]
+        "output_type_id": "2871",
+        "inputs": ["Transcranial Microcontrollers", "Synthetic Synapses", "Guidance Systems"]
     },
     {
         "output": "Self-Harmonizing Power Core",
         "output_type": "Advanced Planetary Materials",
+        "output_type_id": "2872",
         "inputs": ["Camera Drones", "Nuclear Reactors", "Hermetic Membranes"]
     },
     {
         "output": "Sterile Conduits",
         "output_type": "Advanced Planetary Materials",
+        "output_type_id": "2875",
         "inputs": ["Smartfab Units", "Water", "Vaccines"]
     },
     {
         "output": "Wetware Mainframe",
         "output_type": "Advanced Planetary Materials",
+        "output_type_id": "2876",
         "inputs": ["Supercomputers", "Biotech Research Reports", "Cryoprotectant Solution"]
     },
     {
         "output": "Biotech Research Reports",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Nanites", "Livestock", "Construction Blocks"]
+        "output_type_id": "2358",
+        "inputs": ["Livestock", "Construction Blocks", "Nanites"]
     },
     {
         "output": "Camera Drones",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2345",
         "inputs": ["Silicate Glass", "Rocket Fuel"]
     },
     {
         "output": "Condensates",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Oxides", "Coolant"]
+        "output_type_id": "2344",
+        "inputs": ["Coolant", "Oxides"]
     },
     {
         "output": "Cryoprotectant Solution",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2367",
         "inputs": ["Synthetic Oil", "Fertilizer", "Test Cultures"]
     },
     {
         "output": "Data Chips",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "17392",
         "inputs": ["Supertensile Plastics", "Microfiber Shielding"]
     },
     {
         "output": "Gel-Matrix Biopaste",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2348",
         "inputs": ["Oxides", "Biocells", "Superconductors"]
     },
     {
         "output": "Guidance Systems",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "9834",
         "inputs": ["Water-Cooled CPU", "Transmitter"]
     },
     {
         "output": "Hazmat Detection Systems",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2366",
         "inputs": ["Polytextiles", "Viral Agent", "Transmitter"]
     },
     {
         "output": "Hermetic Membranes",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2361",
         "inputs": ["Polyaramids", "Genetically Enhanced Livestock"]
     },
     {
         "output": "High-Tech Transmitters",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Polyaramids", "Transmitter"]
+        "output_type_id": "17898",
+        "inputs": ["Transmitter", "Polyaramids"]
     },
     {
         "output": "Industrial Explosives",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Fertilizer", "Polytextiles"]
+        "output_type_id": "2360",
+        "inputs": ["Polytextiles", "Fertilizer"]
     },
     {
         "output": "Neocoms",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Biocells", "Silicate Glass"]
+        "output_type_id": "2354",
+        "inputs": ["Silicate Glass", "Biocells"]
     },
     {
         "output": "Nuclear Reactors",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2352",
         "inputs": ["Enriched Uranium", "Microfiber Shielding"]
     },
     {
         "output": "Planetary Vehicles",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "9846",
         "inputs": ["Supertensile Plastics", "Mechanical Parts", "Miniature Electronics"]
     },
     {
         "output": "Robotics",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "9848",
         "inputs": ["Mechanical Parts", "Consumer Electronics"]
     },
     {
         "output": "Smartfab Units",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Construction Blocks", "Miniature Electronics"]
+        "output_type_id": "2351",
+        "inputs": ["Miniature Electronics", "Construction Blocks"]
     },
     {
         "output": "Supercomputers",
         "output_type": "Specialized Planetary Materials",
-        "inputs": ["Water-Cooled CPU", "Coolant", "Consumer Electronics"]
+        "output_type_id": "2349",
+        "inputs": ["Coolant", "Consumer Electronics", "Water-Cooled CPU"]
     },
     {
         "output": "Synthetic Synapses",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "2346",
         "inputs": ["Supertensile Plastics", "Test Cultures"]
     },
     {
         "output": "Transcranial Microcontrollers",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "12836",
         "inputs": ["Biocells", "Nanites"]
     },
     {
         "output": "Ukomi Superconductors",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "17136",
         "inputs": ["Synthetic Oil", "Superconductors"]
     },
     {
         "output": "Vaccines",
         "output_type": "Specialized Planetary Materials",
+        "output_type_id": "28974",
         "inputs": ["Livestock", "Viral Agent"]
     },
     {
         "output": "Biocells",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2329",
         "inputs": ["Biofuels", "Precious Metals"]
     },
     {
         "output": "Construction Blocks",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "3828",
         "inputs": ["Reactive Metals", "Toxic Metals"]
     },
     {
         "output": "Consumer Electronics",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "9836",
         "inputs": ["Toxic Metals", "Chiral Structures"]
     },
     {
         "output": "Coolant",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "9832",
         "inputs": ["Electrolytes", "Water"]
     },
     {
         "output": "Enriched Uranium",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "44",
         "inputs": ["Precious Metals", "Toxic Metals"]
     },
     {
         "output": "Fertilizer",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "3693",
         "inputs": ["Bacteria", "Proteins"]
     },
     {
         "output": "Genetically Enhanced Livestock",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "15317",
         "inputs": ["Proteins", "Biomass"]
     },
     {
         "output": "Livestock",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "3725",
         "inputs": ["Proteins", "Biofuels"]
     },
     {
         "output": "Mechanical Parts",
         "output_type": "Refined Planetary Materials",
-        "inputs": ["Reactive Metals", "Precious Metals"]
+        "output_type_id": "3689",
+        "inputs": ["Precious Metals", "Reactive Metals"]
     },
     {
         "output": "Microfiber Shielding",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2327",
         "inputs": ["Industrial Fibers", "Silicon"]
     },
     {
         "output": "Miniature Electronics",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "9842",
         "inputs": ["Chiral Structures", "Silicon"]
     },
     {
         "output": "Nanites",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2463",
         "inputs": ["Bacteria", "Reactive Metals"]
     },
     {
         "output": "Oxides",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2317",
         "inputs": ["Oxidizing Compound", "Oxygen"]
     },
     {
         "output": "Polyaramids",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2321",
         "inputs": ["Oxidizing Compound", "Industrial Fibers"]
     },
     {
         "output": "Polytextiles",
         "output_type": "Refined Planetary Materials",
-        "inputs": ["Biofuels", "Industrial Fibers"]
+        "output_type_id": "3695",
+        "inputs": ["Industrial Fibers", "Biofuels"]
     },
     {
         "output": "Rocket Fuel",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "9830",
         "inputs": ["Plasmoids", "Electrolytes"]
     },
     {
         "output": "Silicate Glass",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "3697",
         "inputs": ["Oxidizing Compound", "Silicon"]
     },
     {
         "output": "Superconductors",
         "output_type": "Refined Planetary Materials",
-        "inputs": ["Plasmoids", "Water"]
+        "output_type_id": "9838",
+        "inputs": ["Water", "Plasmoids"]
     },
     {
         "output": "Supertensile Plastics",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2312",
         "inputs": ["Oxygen", "Biomass"]
     },
     {
         "output": "Synthetic Oil",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "3691",
         "inputs": ["Electrolytes", "Oxygen"]
     },
     {
         "output": "Test Cultures",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2319",
         "inputs": ["Bacteria", "Water"]
     },
     {
         "output": "Transmitter",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "9840",
         "inputs": ["Plasmoids", "Chiral Structures"]
     },
     {
         "output": "Viral Agent",
         "output_type": "Refined Planetary Materials",
-        "inputs": ["Bacteria", "Biomass"]
+        "output_type_id": "3775",
+        "inputs": ["Biomass", "Bacteria"]
     },
     {
         "output": "Water-Cooled CPU",
         "output_type": "Refined Planetary Materials",
+        "output_type_id": "2328",
         "inputs": ["Reactive Metals", "Water"]
     },
     {
         "output": "Bacteria",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2393",
         "inputs": ["Microorganisms"]
     },
     {
         "output": "Biofuels",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2396",
         "inputs": ["Carbon Compounds"]
     },
     {
         "output": "Biomass",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "3779",
         "inputs": ["Planktic Colonies"]
     },
     {
         "output": "Chiral Structures",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2401",
         "inputs": ["Non-CS Crystals"]
     },
     {
         "output": "Electrolytes",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2390",
         "inputs": ["Ionic Solutions"]
     },
     {
         "output": "Industrial Fibers",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2397",
         "inputs": ["Autotrophs"]
     },
     {
         "output": "Oxidizing Compound",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2392",
         "inputs": ["Reactive Gas"]
     },
     {
         "output": "Oxygen",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "3683",
         "inputs": ["Noble Gas"]
     },
     {
         "output": "Plasmoids",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2389",
         "inputs": ["Suspended Plasma"]
     },
     {
         "output": "Precious Metals",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2399",
         "inputs": ["Noble Metals"]
     },
     {
         "output": "Proteins",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2395",
         "inputs": ["Complex Organisms"]
     },
     {
         "output": "Reactive Metals",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2398",
         "inputs": ["Base Metals"]
     },
     {
         "output": "Silicon",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "9828",
         "inputs": ["Felsic Magma"]
     },
     {
         "output": "Toxic Metals",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "2400",
         "inputs": ["Heavy Metals"]
     },
     {
         "output": "Water",
         "output_type": "Processed Planetary Materials",
+        "output_type_id": "3645",
         "inputs": ["Aqueous Liquids"]
+    },
+    {
+        "output": "Microorganisms",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2073"
+    },
+    {
+        "output": "Base Metals",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2267"
+    },
+    {
+        "output": "Aqueous Liquids",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2268"
+    },
+    {
+        "output": "Noble Metals",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2270"
+    },
+    {
+        "output": "Heavy Metals",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2272"
+    },
+    {
+        "output": "Planktic Colonies",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2286"
+    },
+    {
+        "output": "Complex Organisms",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2287"
+    },
+    {
+        "output": "Carbon Compounds",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2288"
+    },
+    {
+        "output": "Autotrophs",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2305"
+    },
+    {
+        "output": "Non-CS Crystals",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2306"
+    },
+    {
+        "output": "Felsic Magma",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2307"
+    },
+    {
+        "output": "Suspended Plasma",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2308"
+    },
+    {
+        "output": "Ionic Solutions",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2309"
+    },
+    {
+        "output": "Noble Gas",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2310"
+    },
+    {
+        "output": "Reactive Gas",
+        "output_type": "Raw Planetary Materials",
+        "output_type_id": "2311"
     }
 ]
